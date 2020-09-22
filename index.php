@@ -1,4 +1,10 @@
+<?php 
+// Allow the config
+define('__CONFIG__', true);
+// Require the config
+require_once "inc/config.php"; 
 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +21,7 @@
 
 <?php  echo "hello world ,Today is ... ";
 /*prints the date of the current day*/
-echo date("Y m d");
+echo date("Y /m/ d");
 
 
 ?>
