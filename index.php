@@ -23,7 +23,7 @@ require_once "inc/config.php";
 /*prints the date of the current day*/
 echo date("Y /m/ d");
 
-
+echo " hello  user with id ". $_SESSION['user_id'];
 ?>
 <p>   <a href="register.php">Register</a>
 <a href="login.php">Login</a>
