@@ -4,6 +4,15 @@ define('__CONFIG__', true);
 // Require the config
 require_once "inc/config.php"; 
 
+//check if the user is allowed
+if(isset($_SESSION['user_id'])){
+
+}
+else{
+  //if they are not allowed
+  header("Location:login.php");exit();
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -23,7 +32,7 @@ require_once "inc/config.php";
 /*prints the date of the current day*/
 echo date("Y /m/ d");
 
-
+echo " hello  user with id ". $_SESSION['user_id'];
 ?>
 <p>   <a href="register.php">Register</a>
 <a href="login.php">Login</a>

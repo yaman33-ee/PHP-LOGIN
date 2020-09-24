@@ -40,7 +40,7 @@ if($finduser->rowCount()==1){
   if(password_verify($password,$hash))
   {
     //user is signed in direct to whatever page u like
-    $return['redirect']='index.php';
+    $return['redirect']='dashboard.php';
     //like atoken that u are  signed in and keeps u signed in every page
     $_SESSION['user_id']=$user_id;
 

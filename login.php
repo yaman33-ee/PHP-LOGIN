@@ -38,10 +38,13 @@ require_once "inc/config.php"  ?>
     <!--rhe error div-->
     <div class="uk-margin uk-alert uk-alert-danger js-error" style="display:none"></div>
 
+
+    <p>You dont have an account
+    <a href="register.php">SIGN UP NOW </a></p>
    <div class="uk-margin">
    <button class="uk-button uk-button-default" type="submit">Login</button>
    </div>
-    
+   
     </div><!--end the form-->
 
 </div><!--end uk-grid--->

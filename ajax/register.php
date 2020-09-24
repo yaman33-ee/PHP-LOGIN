@@ -54,7 +54,7 @@ $add_user->bindParam(':password',$password,PDO::PARAM_STR);
   $_SESSION['user_id']=(int)$user_id;
 
     //as atest if it is well 
-  $return['redirect']='index.php?message=You Logged in succesfully';
+  $return['redirect']='dashboard.php?message=You Logged in succesfully';
   //if u want to use it in the future
   $return['loggd_in']=true;
 }
